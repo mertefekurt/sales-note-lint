@@ -1,20 +1,21 @@
 # Sales Note Lint
 
-Check sales call notes for missing next step, decision maker, and timeline.
-
 ![Sales Note Lint cover](assets/readme-cover.svg)
 
-## Signal route
+Check sales call notes for missing next step, decision maker, and timeline.
 
-![Workflow diagram](assets/readme-diagram.svg)
+`Python`
 
-## Checks in plain language
+## Start here
 
-- `unknown-decision-maker` - decision maker missing (high); identify buyer or sponsor.
-- `missing-next-step` - next step missing (medium); record concrete follow-up.
-- `missing-timeline` - timeline missing (low); capture buying timeline.
+```bash
+git clone https://github.com/mertefekurt/sales-note-lint.git
+cd sales-note-lint
+python -m pip install -e ".[dev]"
+sales-note-lint examples/sample.txt
+```
 
-## Files to open first
+## Project map
 
 ```text
 .github/        CI workflow
@@ -23,11 +24,8 @@ src/            package source
 tests/          test coverage
 ```
 
-## Command path
+## Repository
 
-```bash
-git clone https://github.com/mertefekurt/sales-note-lint.git
-cd sales-note-lint
-python -m pip install -e ".[dev]"
-sales-note-lint examples/sample.txt
-```
+[Open the source on GitHub →](https://github.com/mertefekurt/sales-note-lint)
+
+[MIT License](LICENSE)
